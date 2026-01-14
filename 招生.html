@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招生简章</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 28px;
+            font-weight: 700;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f1f3f5;
+        }
+        .image-container {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover {
+            transform: translateY(-2px);
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .tip {
+            margin-top: 30px;
+            color: #6c757d;
+            font-size: 15px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #4dabf7;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #868e96;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+                border-radius: 12px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .tip {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>招生简章</h1>
+        
+        <div class="image-container">
+            <!-- 图片会自动适应容器宽度，确保图片文件名为 tupian.jpg -->
+            <img src="tupian.jpg" alt="招生简章详情">
+        </div>
+        
+        <div class="tip">
+            <p>提示：您可以上下滑动查看图片完整内容。</p>
+            <p>如需保存，可长按图片选择“保存至手机”。</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 招生办公室. 所有信息以最新发布为准.</p>
+        </div>
+    </div>
+</body>
+</html>
